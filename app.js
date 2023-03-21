@@ -1,5 +1,6 @@
 const areSimilar = require('./problems/areSimilar')
 const arrayChange = require('./problems/arrayChange')
+const palindrome = require('./problems/palindomeRearranging')
 
 
 console.log(areSimilar([1,2,3],[1,2,3]));//true
@@ -13,3 +14,14 @@ console.log(arrayChange([1,1,1])); //3 moves -> 1,2,3
 console.log(arrayChange([-1000,0,-2,0])); //5 moves -> -1000,0,1,2
 console.log(arrayChange([2,1,10,1])); //12 moves -> 2,3,10,11
 console.log(arrayChange([2,3,3,5,5,5,4,12,12,10,15])); //13 moves -> 2,3,4,5,6,7,8,12,13,14,15
+
+
+
+console.log(palindrome('abba')); //true -> correct
+console.log(palindrome('aabb')); //true -> correct
+console.log(palindrome('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabc')); //false
+console.log(palindrome('abbcabb'));//true
+console.log(palindrome('zyyzzzzz')); //true
+console.log(palindrome('abca'));//false
+console.log(palindrome('abdhuierf'))//false
+console.log(palindrome('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbccccaaaaaaaaaaaaa'));//false
