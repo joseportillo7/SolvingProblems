@@ -1,6 +1,7 @@
 const areSimilar = require('./problems/areSimilar')
 const arrayChange = require('./problems/arrayChange')
 const palindrome = require('./problems/palindomeRearranging')
+const sequence = require('./problems/sequenceChars')
 
 
 console.log(areSimilar([1,2,3],[1,2,3]));//true
@@ -26,3 +27,12 @@ console.log(palindrome('zyyzzzzz')); //true
 console.log(palindrome('abca'));//false
 console.log(palindrome('abdhuierf'))//false
 console.log(palindrome('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbccccaaaaaaaaaaaaa'));//false
+
+
+
+console.log("************ Sequence **************");
+console.log(sequence('()')); //true
+console.log(sequence('()[]{}')); //true
+console.log(sequence('(]')); //false
+console.log(sequence('([)]')) //false
+console.log(sequence('{[]}')); //true
