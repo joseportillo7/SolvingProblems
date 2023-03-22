@@ -1,6 +1,6 @@
 function palindrome(inputString) {
-    
-    let inputArray = Array.from(inputString)
+    let auxinput = inputString.replace(" ","")
+    let inputArray = Array.from(auxinput.toLowerCase())
     let flag = false
     let cont = 0
     let passNumber = 0
@@ -11,18 +11,19 @@ function palindrome(inputString) {
             flag = true
         }else{
             const extractElement = inputArray.splice(cont,1)
-            //console.log(inputArray);
+            // console.log(inputArray);
             let size = inputArray.length
             cont++
             if(size >= cont){
                 inputArray.splice(cont, 0, extractElement[0])
             }else if(passNumber <= size){
+                inputArray.splice(cont, 0, extractElement[0])
                 cont = 0
                 passNumber++
             }else{
                 return false
             }
-            //console.log(inputArray);
+            // console.log(inputArray);
             rearranged()
         }
     }
