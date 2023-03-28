@@ -2,6 +2,7 @@ const areSimilar = require('./problems/areSimilar')
 const arrayChange = require('./problems/arrayChange')
 const palindrome = require('./problems/palindomeRearranging')
 const sequence = require('./problems/sequenceChars')
+const containedString = require('./problems/containedString')
 
 
 console.log(areSimilar([1,2,3],[1,2,3]));//true
@@ -36,3 +37,8 @@ console.log(sequence('()[]{}')); //true
 console.log(sequence('(]')); //false
 console.log(sequence('([)]')) //false
 console.log(sequence('{[]}')); //true
+
+
+console.log("************ ContainedString **************");
+console.log(containedString('abc','abdbca')); //1
+console.log(containedString('ab','abcbcbadrazklb')); //3
