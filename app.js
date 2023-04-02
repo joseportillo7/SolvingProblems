@@ -4,6 +4,7 @@ const palindrome = require('./problems/palindomeRearranging')
 const sequence = require('./problems/sequenceChars')
 const containedString = require('./problems/containedString')
 const arrayMaximal = require('./problems/arrayMaximal')
+const avoidObstacles = require('./problems/avoidObstacles')
 
 console.log(areSimilar([1,2,3],[1,2,3]));//true
 console.log(areSimilar([1,2,3],[2,1,3])); //true
@@ -47,3 +48,8 @@ console.log(containedString('ab','abcbcbadrazklb')); //3
 console.log("************ Array Maximal Adjacent Difference **************");
 console.log(arrayMaximal([2,4,1,0])); //3
 console.log(arrayMaximal([-1, 1, -3, -4])); //4
+
+
+console.log('************ Avoid Obstacles **************');
+console.log(avoidObstacles([5, 3, 6, 7, 9]));
+console.log(avoidObstacles([19,32,11,23]));
