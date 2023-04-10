@@ -53,3 +53,7 @@ console.log(arrayMaximal([-1, 1, -3, -4])); //4
 console.log('************ Avoid Obstacles **************');
 console.log(avoidObstacles([5, 3, 6, 7, 9]));
 console.log(avoidObstacles([19,32,11,23]));
+
+
+console.log('************ Key Password **************');
+console.log(keyPassword([1,2,3,4], 2))
